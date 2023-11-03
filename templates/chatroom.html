@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Display all messages -->
+{% for message in messages %}
+<p><strong>{{ message.username }}</strong> ({{ message.timestamp.strftime("%A, %H:%M") }}): {{ message.message }}</p>
+{% endfor %}
+
+<!-- Chatroom selection form -->
+<form method="post">
+    <select name="chatroom">
+        {% for chatroom in chatrooms %}
+        <option value="{{ chatroom }}">{{ chatroom }}</option>
+        {% endfor %}
+    </select>
+    <input type="submit" value="Join">
+</form>
+
+{% endblock %}
