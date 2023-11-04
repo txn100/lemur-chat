@@ -4,13 +4,9 @@ Lemur-chat started off as a dare: how fast could I build a functional app that w
 
 This Flask-powered  Chat Application enables multiple users to communicate in chatrooms. It leverages WebSocket technology provided by Pusher for real-time bidirectional event-based communication. 
 
-## Link
+## Link : http://lemur-chat.pacifictrout.com
 
-**Requires Login From Registered Users**
-**Registration has been turned off**
-**Lemur Chat is not open for pulbic**
-
-http://lemur-chat.pacifictrout.com
+Lemur Chat is not open to the public, and registrations have been turned off. This is documentation if you would like to fork this repo, to create your own private chat. I am using pythonanywhere as a hosting provider(would not recommend for such app)
 
 ## Features
 
