@@ -22,7 +22,7 @@ Lemur Chat is not open to the public, and registrations have been turned off. Th
 
 - Python 3.x
 - Pip package manager
-- Virtual Environment (recommended)
+- Virtual Environment (recommended, gets rid of most problems)
 
 To use your own Pusher API key modify these following in terminalChat.py:
 
