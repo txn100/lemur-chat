@@ -1,7 +1,7 @@
 #Lemur-chat
+Lemur-chat started off as a dare: how fast could i buil a functional app that we could communicate on? The answer is 3 hours. Lemur chat is a way for me and my friends to communicate but has a huge expansion potential. I am currently working on Lemur-Chat 2.0, aimed towards intra-organizational communication(like teams).
 
-
-This Flask-powered  Chat Application enables multiple users to communicate in chatrooms. It leverages WebSocket technology provided by Pusher for real-time bidirectional event-based communication.
+This Flask-powered  Chat Application enables multiple users to communicate in chatrooms. It leverages WebSocket technology provided by Pusher for real-time bidirectional event-based communication. 
 
 ## Features
 
