@@ -19,10 +19,14 @@ This Flask-powered  Chat Application enables multiple users to communicate in ch
 - Pip package manager
 - Virtual Environment (recommended)
 
-To use your own Pusher API key modify these following:
+To use your own Pusher API key modify these following in terminalChat.py:
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+pusher = Pusher(
+    app_id='1699312',
+    key='4f6a30582d3fee132dc9',
+    secret='5a9abd70a7af2505b828',
+    cluster='eu',
+    ssl=True
+)
 ```
