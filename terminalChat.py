@@ -42,8 +42,8 @@ pusher = Pusher(
 
 class TerminalChat():
     users = {
-        "pacifictrout": "App123",
-        "dingleberry": "App123",
+        "xxxxx": "xxxxxx",
+        "xxxxxx": "xxxxxx",
       
     }
     
