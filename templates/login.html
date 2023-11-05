@@ -1,21 +1,32 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-
-
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
 <div class="container">
-    <h2 class="greet">Dingleberry and Pacifictrout's Private Messaging Terminal</h2>
-    <h3 class="e">Registered Trouts : 2</h3>
+    <h2 class="greet">LemurComm</h2>
+
+    {% if error_message %}
+    <div class="alert alert-danger" role="alert">
+        {{ error_message }}
+    </div>
+    {% endif %}
+
     <form method="post">
         <div>
-            Username: <input type="text" name="username"><br>
+            Username: <input type="text" name="username" required><br> <!-- Added required attribute -->
         </div>
         <div>
-            Password: <input type="password" name="password"><br>
+            Password: <input type="password" name="password" autocomplete="off" required><br> <!-- Added required attribute -->
         </div>
         <div>
             <input type="submit" value="Login">
+        </div>
+
+        <div class="btn-container">
+            <a href="{{ url_for('register_organization') }}" class="btn btn-default">Create Organization</a>
+            <a href="{{ url_for('redirect_organization') }}" class="btn btn-default">Join Organization</a>
         </div>
     </form>
 </div>

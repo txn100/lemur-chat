@@ -1,0 +1,71 @@
+/* dashboard.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+input[type="text"], button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+.chatroom-list {
+    list-style: none;
+    padding: 0;
+}
+
+.chatroom-list li {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.chatroom-list li:last-child {
+    border-bottom: none;
+}
+
+/* Additional styles for better layout */
+input[type="text"] {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.chatroom-list li:hover {
+    background-color: #f9f9f9;
+}

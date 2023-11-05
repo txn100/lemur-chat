@@ -1,0 +1,64 @@
+/* create_organization.css */
+
+/* General container styles */
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+  }
+  
+  /* Style for the greeting header */
+  .greet {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Input field styling */
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box; /* to make padding not affect the overall width */
+  }
+  
+  /* Button styling */
+  button,
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: black;; /* Sample green color, adjust as needed */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  button:hover,
+  input[type="submit"]:hover {
+    background-color: black; /* Darker shade for hover effect */
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: #FF6565;
+    margin: 20px 0;
+  }
+  
+  /* Additional styling specific for the create organization page */
+  .create-org-form {
+    margin-top: 30px;
+  }
+  
+  .create-org-form input[type="text"] {
+    margin-bottom: 20px; /* Additional margin for the form */
+  }
+  
+  /* Add any additional styles you want for your create organization page below */
+  

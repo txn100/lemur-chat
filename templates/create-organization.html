@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='create-org.css') }}">
+</head>
+<div class="container">
+    <h2>Create Your Organization</h2>
+    <form method="post" action="{{ url_for('create_organization') }}">
+        <div class="form-group">
+            <label for="companyName">Company Name:</label>
+            <input type="text" id="companyName" name="company_name" required>
+        </div>
+        <!-- Add any additional fields here -->
+        <div class="form-group">
+            <input type="submit" value="Create Organization">
+        </div>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,6 +1,11 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='chat.css') }}">
+</head>
 <div class="chat-container">
     <header class="chat-header">
         <h2>Welcome, {{ username }}</h2>

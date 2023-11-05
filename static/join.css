@@ -1,0 +1,108 @@
+/* Base background settings */
+:root {
+  --dark-bg: black; /* Black background */
+  --dark-accent: #242424; /* Very dark gray for accent */
+  --dark-hover: #3a3a3a; /* Slightly lighter gray for hover effects */
+  --text-color: white; /* White text color */
+  --text-muted: #d1d1d1; /* Light gray for muted text */
+  --primary: #fff; /* White color for primary elements */
+  --border-radius: 6px; /* Border radius for elements */
+}
+
+/* Universal box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--dark-bg); /* Black background */
+  color: var(--text-color); /* White text color */
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Container styling */
+.container {
+  width: 100%; /* Full viewport width */
+  max-width: 600px; /* Max container width */
+  margin: auto; /* Center the container */
+  padding: 20px; /* Padding around container */
+  display: flex; /* Enable flexbox display */
+  flex-direction: column; /* Vertical stacking of children */
+  justify-content: center; /* Center children on cross axis */
+  min-height: 100vh; /* Full viewport height minimum */
+}
+
+/* Headings */
+h2 {
+  font-size: 2rem;
+  text-align: center; /* Centered text */
+  color: var(--primary); /* White color for heading */
+  margin-bottom: 1rem; /* Space below headings */
+}
+
+/* Form styling */
+form {
+  display: flex; /* Flexbox display for form */
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements horizontally */
+}
+
+/* Form group styling */
+.form-group {
+  width: 100%; /* Full width for form group */
+  margin-bottom: 1rem; /* Space below form group */
+}
+
+/* Input fields styling */
+.form-group label {
+  display: block; /* Full width for labels */
+  margin-bottom: .5rem; /* Space below labels */
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: calc(100% - 1rem); /* Full width minus padding */
+  padding: .375rem .5rem; /* Padding inside input fields */
+  border: 1px solid var(--dark-accent); /* Dark gray border */
+  border-radius: var(--border-radius); /* Rounded corners */
+  background-color: var(--dark-accent); /* Dark gray background */
+  color: var(--text-color); /* White text color */
+}
+
+/* Button styling */
+button.btn {
+  width: calc(100% - 1rem); /* Full width minus padding */
+  padding: .675rem; /* Padding inside button */
+  background-color: var(--dark-hover); /* Dark gray background for button */
+  color: var(--text-color); /* White text color */
+  border: none; /* No border */
+  border-radius: var(--border-radius); /* Rounded corners */
+  margin-top: 1rem; /* Space above button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effects for button */
+button.btn:hover {
+  background-color: var(--dark-accent); /* Even darker background on hover */
+}
+
+/* Add other styles for focus and responsive design as needed */
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .container {
+      width: 85%; /* Adjusted width for medium screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+      width: 95%; /* Adjusted width for small screens */
+  }
+}
