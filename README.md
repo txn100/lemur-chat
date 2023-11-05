@@ -1,4 +1,4 @@
-### lemur-chat
+### lemur-chat use: admin
 
 Lemur-chat started off as a dare: how fast could I build a functional app that we could communicate on? The answer is 3 hours. Lemur chat is a way for me and my friends to communicate but has a huge expansion potential. I am currently working on Lemur-Chat 2.0, aimed towards intra-organizational communication(like teams).
 
